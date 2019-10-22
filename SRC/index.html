@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Ascendiam with quick layout using Bootstrap</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+        <!-- section id="navigation" -->
+            <!--<div class="container-fluid"> Note: will use all horizontal width available, not fixed width, which comes with the Container class in Bootstrap.-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <!--div class="LogoFont"-->
+                <a class="navbar-brand" href="#home">
+                    Ascendiam (TM)
+                    <!--img src="./assets/Logo-Transparent.png" width="130" height="130" class="d-inline-block align-top" alt=“AscendiamTM)"-->
+                </a>
+                <!--</div -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+                                Web Apps
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Cloud Svc APIs</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Ecommerce</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Survey</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="jumbotron">
+                <h1 class="display-5">All Rise with Better Software.</h1>
+                    <p class="lead">Welcome to Ascendiam (TM), a hobby site used to explore web development.
+                    </p>
+            </div>
+            <div class="card mb-4 pl-2">
+                <div class="card-body">
+                <h4>Web Applications</h4>
+                <P>Within the Web Apps tab you'll find links to responsive pages that host web applications. The apps do several things, like <br>* build a database and populate it with content from cloud service APIs; <br>* allow product selection from a shopping page; <br>* present survey questions, capture user answers, present survey insights.
+                </p>
+                    <br>
+                    <h5>One More Thing</h5>
+                    <P class="card-text">This site will evolve. So, check back soon. And, thanks for visiting Ascendiam.com.
+                    </p>
+                    </div>
+                </div>
+            <footer>
+                <div class="footer mt-4">
+                    <p class="text-center">Ascendiam(TM) and Ascendiam.com are property of Glenn Kouhia. For information, contact: <a href="mailto:GKouhia@Comcast.net">GKouhia@Comcast.net</a>
+                </p>
+                </div>
+            </footer>
+        </div>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/custom.js"></script>
+    </body>
+</html>
+        <!-- Notes: mention attribution to Gary Simon's online Bootstrap course.-->
+        <!-- next things to fix.-->
+        <!--Fix the bullet points witn icons-->
+        <!--Bootstrap use inspired by the work of GARY SIMON at: https://coursetro.com/posts/code/130/Learn-Bootstrap-4-Final-in-2018-with-our-Free-Crash-Course-->
+        <!--Make the Home tab indicate it is selected when on Index.com. Same for other tabs when those pages are selected/open. -->

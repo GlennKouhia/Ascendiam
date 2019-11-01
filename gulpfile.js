@@ -21,11 +21,11 @@ gulp.task('js', function() {
 gulp.task('serve', gulp.series('sass', function() {
 
     browserSync.init({
-        server: "./src"
+        server: "."
     });
-
+// might need to remove gulp.series from line below because it doesn't appear in the video
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], gulp.series('sass'));
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("*.html").on('change', browserSync.reload);
 }));
-
+// might need to remove gulp.parallel from next line. It  doesn't appear in video.
 gulp.task('default', gulp.parallel('js','serve'));

@@ -1,6 +1,8 @@
-index5.html
-CNAME
-Package-lock.json
-package.json
-/node_modules
-gulpfile.js
+index5.html;
+CNAME;
+Package-lock.json;
+package.json;
+/node_modules;
+gulpfile.js;
+index2.html;
+index3.html

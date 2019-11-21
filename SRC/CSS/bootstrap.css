@@ -3218,37 +3218,37 @@ input[type="button"].btn-block {
 .card-link:hover {
   text-decoration: none; }
 
-.card-link + .card-link {
+.d-link + .d-link {
   margin-left: 1.25rem; }
 
-.card-header {
+.d-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
-  .card-header:first-child {
+  .d-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
-  .card-header + .list-group .list-group-item:first-child {
+  .d-header + .list-group .list-group-item:first-child {
     border-top: 0; }
 
-.card-footer {
+.d-footer {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125); }
-  .card-footer:last-child {
+  .d-footer:last-child {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
 
-.card-header-tabs {
+.d-header-tabs {
   margin-right: -0.625rem;
   margin-bottom: -0.75rem;
   margin-left: -0.625rem;
   border-bottom: 0; }
 
-.card-header-pills {
+.d-header-pills {
   margin-right: -0.625rem;
   margin-left: -0.625rem; }
 
-.card-img-overlay {
+.d-img-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -3256,24 +3256,24 @@ input[type="button"].btn-block {
   left: 0;
   padding: 1.25rem; }
 
-.card-img {
+.d-img {
   width: 100%;
   border-radius: calc(0.25rem - 1px); }
 
-.card-img-top {
+.d-img-top {
   width: 100%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px); }
 
-.card-img-bottom {
+.d-img-bottom {
   width: 100%;
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px); }
 
-.card-deck {
+.d-deck {
   display: flex;
   flex-direction: column; }
-  .card-deck .card {
+  .d-deck .card {
     margin-bottom: 15px; }
   @media (min-width: 576px) {
     .card-deck {

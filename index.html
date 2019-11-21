@@ -1,127 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Ascendiam live sports</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    font-family: Arial;
-    font-size: 17px;
-  }
-
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    /*min-width: 100%;*/
-    min-height: 100%;
-  }
-
-  .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-  }
-
-  #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  #myBtn:hover {
-    background: #ddd;
-    color: black;
-  }
-  </style>
-    <!--body, html {
-        height: 100%;
-    }
-
-    .bg {
-        /* The image used and the color to display if image not available.*/
-        /* background-image: url("assets/woman_smiles.png");
-        background-image: url("assets/woman_smiles.png");
-        background-color: #cccccc; */
-
-        /* Full height = 100%, half height = 50% */
-        height: 90%;
-        margin: 0%;
-
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-            <style>
-            body  {
-            background-image: url("assets/woman_smiles.png");
-            background-color: #cccccc;
-        }
-    </style> -->
-
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FontAwestome account link. Provides icons. -->
+    <script src="https://kit.fontawesome.com/f078901796.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Ascendiam Home</title>
+  </head>
 <body>
-        <div class="bg"></div>
-            <video autoplay muted loop id="myVideo">
-             <source src="s-vid.mp4" type="video/mp4">
-            <!--   <source src="https://youtu.be/WVK_uyUlAlM"allowfullscreen="true" type="video/mp4" > -->
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
-    <div class="content">
-        <div class="container">
+    <div class="container">
+    <!-- section id="navigation". Moved Index.html back to SRC/-->
+        <!--<div class="container-fluid"> Note: will use all horizontal width available, not fixed width, which comes with the Container class in Bootstrap.-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <!--div class="LogoFont"-->
+            <a class="navbar-brand" href="index.html">
+                Ascendiam (TM)
+                <!--img src="./assets/Logo-Transparent.png" width="130" height="130" class="d-inline-block align-top" alt=“AscendiamTM)"-->
+            </a>
+            <!--</div -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+                            Web Apps
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="src/web_apps/Cloud_Svc_APIs.html">Cloud Svc APIs</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="src/web_apps/Ecommerce.html">Ecommerce</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="src/web_apps/Survey.html">Survey</a>
+                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+                            Insights
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="src/insights/GA_Traffic.html">Site Traffic</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="src/insights/Adwords_Metrics.html">Ad Performance</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/video/goal.html">Goal</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-      <h1>Winning goal -- Sounders, MLS Champions</h1>
-      <p>I recorded this 13 second video live at Century Link Field on 10 November 2019. It shows Victor Rodriguez scoring the 2nd and winning goal for Seattle Sounders over Toronto FC, 3-1.
-      </p>
-
-      <p>
-          <i>Note: Not for commercial use. Glenn owns the video. All rights reserved by Glenn, Sounders and MLS.</i>
-      </p>
-      <!--<p>Go Sounders!
-      </p> -->
-      <button id="myBtn" onclick="myFunction()">Pause</button>
+        <div class="jumbotron">
+            <h1 class="display-5">All Rise with Better Software.</h1>
+                <p class="lead">Welcome to Ascendiam (TM), a hobby site that's used to explore responsive web development, fast full screen video delivered for free via a content delivery network, and software as a service applications.
+                </p>
         </div>
-  <!--<div class="container-fluid">
-      <div class="bg">
-      <h1>My First container-fluid section of a Bootstrap page</h1>
-      <p>This is some text.</p> -->
-      <!--</div> -->
+        <div class="card mb-4 pl-2">
+            <div class="card-body">
+            <h3>Plan of Record, V0.1</h3>
+            <P>Within the Web Apps navigation tab you'll find links to responsive pages that are web applications. After some research and coding I intend for the apps to do several things, like
+                <ul><i class='fas fa-car-side ascendiam' style='font-size:32px'></i>
+                    Define and build a custom database, then populate it with data called from cloud service APIs;</ul>
+                <ul><i class='fas fa-car-side ascendiam' style='font-size:32px'></i>
+                    Mock up an ecommerce product selection shopping page;</ul>
+                <ul><i class='fas fa-car-side ascendiam' style='font-size:32px'></i>
+                    Present survey questions, capture user answers, present survey insights.</ul>
+                <ul><i class='fas fa-car-side ascendiam' style='font-size:32px'></i>
+                    Add banner advertising to a live page.</ul>
+                <ul><i class='fas fa-car-side ascendiam' style='font-size:32px'></i>
+                    Summarize this site's traffic data (GA tags) and AdWord performance (advertising insights).</ul>
+                <ul><i class='fas fa-car-side ascendiam' style='font-size:32px'></i>
+                    Link to a short live video shot at the 2019 MLS final from an iPhone 6S.</ul>
+            </p>
+                <br>
+                <h4>More to come</h4>
+                <P class="card-text">This site will evolve. So, check back soon. I hope to have more to show than simple code clean ups (e.g. <a href="https://validator.w3.org">html validation</a> and <a href="http://csslint.net/">CSS linter validation).</a>
+                </p>
+                <p>And, thanks for visiting Ascendiam.com.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div class="footer mt-4">
+                <p class="text-center">Ascendiam(TM), Ascendiam.com, videos and images are property of Glenn Kouhia unless otherwise stated. For information, contact: <a href="mailto:GKouhia@Comcast.net">GKouhia@Comcast.net .</a>
+            </p>
+            </div>
+        </footer>
     </div>
-
-    <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-
-        function myFunction() {
-            if (video.paused) {
-                video.play();
-                btn.innerHTML = "Pause";
-                                } else
-                                {
-                video.pause();
-                btn.innerHTML = "Play";
-                                }
-                                }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

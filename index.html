@@ -9,19 +9,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- FontAwestome account link. Provides icons. -->
     <script src="https://kit.fontawesome.com/f078901796.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/src/css/bootstrap.css">
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <!--
     <link rel="stylesheet" href="http:www.ascendiam.com/src/css/bootstrap.css">
     <link rel="stylesheet" href="http:www.ascediam.com/src/css/styles.css">
     -->
+    <style>
+    .bg-primary {
+      background-color: #688cf7 !important; }
+      </style>
     <title>Ascendiam Home</title>
   </head>
 <body>
     <div class="container">
     <!-- section id="navigation". Moved Index.html back to SRC/-->
         <!--<div class="container-fluid"> Note: will use all horizontal width available, not fixed width, which comes with the Container class in Bootstrap.-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--removed fixed-top -->
             <!--div class="LogoFont"-->
             <a class="navbar-brand" href="index.html">
                 Ascendiam (TM)
@@ -34,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a> <!--changed href="#" to "index.html"-->
                     </li>
                     <!--<li class="nav-item">
                         <a class="nav-link" href="About.html">About</a>
@@ -59,7 +63,7 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="../ascendiam/src/insights/GA_Traffic.html">Site Traffic</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../ascendiam/src/insights/AdSense_Metrics.html">Ad Pub. Metrics</a>
+                            <a class="dropdown-item" href="../ascendiam/src/insights/AdSense_Metrics.html">Ad Performance</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -71,7 +75,7 @@
 
         <div class="jumbotron">
             <h1 class="display-5">All Rise with Better Software.</h1>
-                <p class="lead">Welcome to Ascendiam (TM), a hobby site that's used to explore responsive web development, fast full-screen video delivered for free via a content delivery network, and software as a service features.
+                <p class="lead">Welcome to Ascendiam (TM), a hobby site that's used to explore responsive web development, fast full-screen video (delivered via a free CDN), and software as a service features.
                 </p>
         </div>
         <div class="card mb-4 pl-2">

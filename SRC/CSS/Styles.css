@@ -1,13 +1,29 @@
+.ascendiam {
+    padding: 10px;
+    color: #688cf7 !important;
+    }
+
 .jumbotron {
-  background-color: #ffffff !important;
-  border-top: 3px solid #dbdbdb;
-  border-bottom: 3px solid #dbdbdb; }
+    margin-bottom: 20rem;
+    background-color: #ffffff !important;
+    border-top: 3px solid #dbdbdb;
+    border-bottom: 3px solid #dbdbdb; }
+
+.jumbotronics {
+    padding: 2rem 1rem;
+    margin-bottom: 20rem;
+    background-color: #ffffff;
+    border-top: 3px solid #dbdbdb;
+    border-bottom: 3px solid #dbdbdb; }
+    border-radius: 0.3rem; }
+    @media (min-width: 576px) {
+     .jumbotronic {
+        padding: 4rem 2rem; } }
 
 .card {
-  background-color: #ffffff !important;
-  border-top: 3px solid #dbdbdb;
-  border-bottom: 3px solid #dbdbdb; }
-
+      background-color: #ffffff !important;
+      border-top: 3px solid #dbdbdb;
+      border-bottom: 3px solid #dbdbdb; }
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7029,8 +7045,3 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-
-.ascendiam {
-    padding: 10px;
-    color: #688cf7 !important;
-    }

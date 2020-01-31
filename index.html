@@ -69,7 +69,13 @@
 
         <div class="jumbotron">
             <h1 class="display-5">All Rise with Better Software.</h1>
+<!-- add js in-line to insert current date -->
                 <p class="lead">Welcome to Ascendiam (TM), a hobby site that's used to explore responsive web development, fast full-screen video (delivered via a free CDN), and software as a service features.
+                    <script>
+                        var date = new Date();
+                        document.body.innerHTML = "Today date is " + (date.getMonth()+1) + "/" +date.getDate() + "/" + date.getFullYear() + " and you are viewing version 0.1 of this site.";
+                    </script>
+                    <!-- and you are viewing version 0.1 of this site. -->
                 </p>
         </div>
         <div class="card mb-4 pl-2">
